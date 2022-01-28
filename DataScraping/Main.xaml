@@ -1,0 +1,181 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="858,2046" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=mscorlib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Activities.DynamicUpdate</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.ExtractData</x:String>
+      <x:String>System.Xml.Serialization</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>System.Runtime.InteropServices</x:String>
+      <x:String>UiPath.Excel</x:String>
+      <x:String>UiPath.Excel.Activities</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.Excel</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence sap:VirtualizedContainerService.HintSize="518,2411" sap2010:WorkflowViewState.IdRef="Sequence_4">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="sd:DataTable" Default="[New System.Data.DataTable]" Name="ExtractDataTable" />
+    </Sequence.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Application: explorer.exe" sap:VirtualizedContainerService.HintSize="476,543" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" ScopeGuid="c7f4d018-2fbb-4f86-8568-172218903019" Version="V1">
+      <uix:NApplicationCard.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="376,251" sap2010:WorkflowViewState.IdRef="Sequence_1">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <uix:NClick ClickType="Single" DisplayName="Click 'Internet Explorer'" sap:VirtualizedContainerService.HintSize="334,157" sap2010:WorkflowViewState.IdRef="NClick_1" KeyModifiers="None" MouseButton="Left">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable DesignTimeRectangle="835, 0, 49, 40" ElementType="Button" FriendlyName="'Internet Explorer'" FullSelectorArgument="&lt;wnd cls='MSTaskSwWClass' title='Çalışan uygulamalar' /&gt;&lt;wnd cls='MSTaskListWClass' title='Çalışan uygulamalar' /&gt;&lt;ctrl name='Çalışan uygulamalar' role='tool bar' /&gt;&lt;ctrl automationid='Microsoft.InternetExplorer.Default' /&gt;" FuzzySelectorArgument="&lt;wnd cls='MSTaskSwWClass' title='Çalışan uygulamalar' /&gt;&lt;wnd cls='MSTaskListWClass' title='Çalışan uygulamalar' /&gt;&lt;ctrl name='Çalışan uygulamalar' role='tool bar' /&gt;&lt;ctrl automationid='Microsoft.InternetExplorer.Default' role='push button' check:text='Internet Explorer' /&gt;" Guid="ff44993b-8e1a-45f6-a297-f7a1233aefb3" ImageBase64="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" InformativeScreenshot="aaf3feb1f283c54e446f702e3433e1bc.png" ScopeSelectorArgument="&lt;wnd app='explorer.exe' cls='Shell_TrayWnd' idx='*' /&gt;" SearchSteps="Selector, FuzzySelector, Image" />
+              </uix:NClick.Target>
+            </uix:NClick>
+          </Sequence>
+        </ActivityAction>
+      </uix:NApplicationCard.Body>
+      <uix:NApplicationCard.TargetApp>
+        <uix:TargetApp Area="0, 0, 0, 0" FilePath="C:\Windows\explorer.exe" IconBase64="iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAMISURBVFhH7ZbtS1NhGMb3X/QvWCkEZmofDHHzpblp29SlEREREUGf+hj0KQoioqgvEQX+CbVsa77uzZfpcZupZZaJ8zQT5gzUc/Scq/s5PnLKHWFO2Ze84AcPz/1c13VzPh3TkY60o7nXJoFAjqSJU9x6ONpVkAuHu8TsSxP2w5LPDMw/Br7f2z8LzwVeq2vyqQm5MPPqGFJeKzD3APh8Kz9m7oDX6sLsXeTMl9sUdPNA8FpdmL6BQsJrdWHqOgoJr9WFqWs0KBy8Vhcmr6KQ8FpdmLxCg8LBa3Xh02XsRp3QUfZD4l+vUTav1YWJS9hBTXRAiXdgM9YOebwdG8JFbIztD4k8zMsytiiLZf7dwWt1YaKdBu1UzIxurI+2YXWoBemwC8tBJ34FnFgKOHKCvWWedMSlZaxRFstk2Uhs9/BaXUi4ocbd2BpvxVq0BSsRJzp7fXB2/jgQLGMl7NAyNylbjbfREm6jBWgYa4EsuPB7yIFUnx22N3M4+2L2QLCMVL9dy5THXFCoA/FWgwXiLlrASY8cyESakOy2Ggbmg9jTqGVKow5awEkLuAwWiDmgjl+APNqMTNiGpL/BMCwfxO7zyIRskKLNUKiDdfFaXYg10wJNtICdHluR/FhnGJYPYne9lilF7VCEJlqg2WCBcTtUwQY5Sp8r2EAL1JL5axaznhrMdZkx77VgwbcNO7O7bzQz8oj+Wi1TGmmkBWxgXbxWFwQr1DEr5BH6XME6JOmHo/LZdBYL3hos99ViNVSPtcFt2Jnd7eUR/WZkAnWQhhugUAfr4rW6MGaBGrVAHqLHA9VIfqhCxZNEFklvFdJ91ViP1GBzxKzBziv91RB95ww97J5lSoM1UKgDoxaDBYYroQ5VQg6XI9NbhqSnFGceCVksvi/FSk8ZNoLlUAYrNNiZecQuY49IHjaXQtse1sVrdSFSIqihEsiBYqz6T2DxbRHKHg5n8fNdETI0lwZOQgkVa7Az86Q8x409niJtvuNBuCT7n9BIp++HsBs+2lP5eI70P8tk+gMabT1X5bEGngAAAABJRU5ErkJggg==" InformativeScreenshot="0f8197b50b0edeeb1ac50521c8827360.png" Selector="&lt;wnd app='explorer.exe' cls='Shell_TrayWnd' idx='*'/&gt;" />
+      </uix:NApplicationCard.TargetApp>
+    </uix:NApplicationCard>
+    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Browser IE: Google" sap:VirtualizedContainerService.HintSize="476,1316" sap2010:WorkflowViewState.IdRef="NApplicationCard_2" InteractionMode="Simulate" ScopeGuid="2d41d007-ab22-42d8-a3e6-b47a37d6e61a" Version="V1">
+      <uix:NApplicationCard.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="376,1099" sap2010:WorkflowViewState.IdRef="Sequence_2">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Double" DisplayName="Type Into 'INPUT'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="334,218" sap2010:WorkflowViewState.IdRef="NTypeInto_1" Text="sahibinden.com" Version="V1">
+              <uix:NTypeInto.Target>
+                <uix:TargetAnchorable BrowserURL="https://www.google.com.tr/" DesignTimeRectangle="431, 190, 504, 32" ElementType="InputBox" FriendlyName="'INPUT'" FullSelectorArgument="&lt;webctrl tableCol='2' tableRow='1' tag='INPUT' type='text' /&gt;" FuzzySelectorArgument="&lt;webctrl class='lst tiah' aaname='Google&amp;apos;da Ara' tag='INPUT' type='text' /&gt;" Guid="19e2c625-3677-4084-9759-5ea743885e18" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAfwAAAAkCAYAAABsSIjlAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAHQSURBVHhe7dexSxtRAMdx/5X8P/4FBSno3EGUgptVcRQURHBolw6CYlECJYQOIq6KIDgUugTFKXumV19IQu68YAgmF+59PvCDx93x1i+3EACAyhN8AEjAIPi1Ws3MzMwqtr5M8AGA6hB8AEiA4ANAAgQfAGao2WxOfUUEHwBmJMa40+lMfUXRF3wAmBHBB4AECD4AJEDwASABgg8ACSgK/v3f57B+cBGWts4y+7xzPvbydwo+AJQoH/xfVw9hdb/+usvCkMd92au/efZp8zSz+Gz4XsEHgBLlg/+zcRe+Hv7uvQ1h6/uf3mm8cxSDv7xzmrlX8AGgRDHE7XZ7sI8K/uLaj8y9gg8AJSoK/srueTfik07wAWDOjAr+sBjxvnHOgg8AcyaGuNVqDfaRwR++V/ABoESjgh8DPukEHwDmTD7428f1zB9+DPh78t8IPgDMmXzw7x//hb2Tm95bwQeASsgHv/X00v3D3zhqdMM98b6dZe4VfAAo0Zvgx71Gv3F92w1/YczfWy72cYIPACUqDP4UJvgAUCLBB4AECD4AJEDwASARMcbTXhHBB4AECD4AJEDwASABgg8ACRgZfDMzM6vW+gbBBwCqS/ABoPJC+A9SWY8EKcU/RQAAAABJRU5ErkJggg==" InformativeScreenshot="60cc0485569993ea994f52417f17f7e0.png" ScopeSelectorArgument="&lt;html title='Google' /&gt;" SearchSteps="FuzzySelector, Image" />
+              </uix:NTypeInto.Target>
+            </uix:NTypeInto>
+            <uix:NClick ClickType="Single" DisplayName="Click 'Google'da Ara'" sap:VirtualizedContainerService.HintSize="334,157" sap2010:WorkflowViewState.IdRef="NClick_2" KeyModifiers="None" MouseButton="Left">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="https://www.google.com.tr/" DesignTimeRectangle="524, 454, 108, 30" ElementType="Button" FriendlyName="'Google'da Ara'" FullSelectorArgument="&lt;webctrl tableCol='1' tableRow='21' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl type='button' class='lsb' tag='INPUT' aaname='Google&amp;apos;da Ara' check:text='Google&amp;apos;da Ara' /&gt;" Guid="9a271bb7-f0cf-47fc-a0ab-739e53951459" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAHAAAAAiCAYAAACHpl23AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAOISURBVGhD7ZtJSl1BFIbdiboUdSF2G8gkk9gvwwaHgQwyscM12IHTELAXe3AFL3wX/vDfU3VNnihYWA8+XtU5p073P5w50Kufoj+NgL9+n1YK4/uPn20Bn5+fKwXx5eu3KmDJVAELpwpYOFXAwqkCFk4VsHCqgIVTBSycVws4MDCQkIt7b6i7vr6e9UXGxsZ609PTWR8sLS31hoeHs75+oVY/vb2WvgWkoVxjDI99d3e3ZX9vPqKAx8fHTV/Ug1zMW9G3gC8tjOW8d8ORfgSkP0TK+eCtBFQefsz0h6C5uLegLwFfM6D+lIg4DDndH8XQEoTi5Y9vXsqHz++cPTbOF2srRv4uyKE4Pwt+SBBzxl2Bv8uRCPj09NTJ1NRUQ86XY3R0tEH3xcXFpqmjo6PWXf6dnZ3mvra21rrzzZ133P2Nx8d88mN3G/AGn3pRLRbOXbVUG2L/OZSna0ZghzE3Nt8VEPOvffclIAViQjXjYI+DCM+BX8sXDKwlEhfrxYV4Ds6+FMCnfA59RGGp5QK6D7pmcsjhQhAb5/Q6Hud3yO07kgj4+PjYCckg54PV1dWm2Xh2NODh4WHj397ebvn9HUMuLCx0+oEzNuXrwnP4O7dRi5pug5gr9uzk8jIv6K4deIygB6/VFScSAR8eHjoh+dDQUNYHWm48O5OTky0Bt7a2Wn5/Ry1qdvmBMzbl49vju9A7t8X5iAH1QK/cY89CvXWh3rQDf+vCyUZMjIskAt7f378IBVZWVrI+7Pg5a9iDg4NWzMjISDMA51yu+fn5ZomciVOs+1UDPEcuXxf0QS63UUu1vQ+h+ZjN7cJnc9gB71SPGGI9Jtc79WNcJBHw7u7uRTY3N/824/aJiYnGzrdsFKcJ3bX8/f397F25l5eXW3e+uRPHHbiDx8d8EHsQvPHcqqVY+RXvtfXGib1GvA92xN39+Hyn2meMiyQC3t7e/hcU1EAiF0cDHrO3t9fyz83Ntfwszv0bGxstP/HUlj++ifmoL19EIomYO9e74jwPsHB/G1Et5pGA7o9zEqNZPC6SCHhzc/Oh0ZJzvs9IIuD19fWHYXx8vBHLbfwiZ2dnW7bPTCLg1dXVh2JwcLD1p2VmZiYb91lJBLy8vKwURCLgxcVFpSASAc/PzysFkQh4dnZWKYhEwNPTSkkkAp6cnFQKogpYOC0B+VclDJWy+Ctg/ZT66fX+AEr06neiL+klAAAAAElFTkSuQmCC" InformativeScreenshot="aad1de21da303b0c9a7be3bbf5fb2405.png" ScopeSelectorArgument="&lt;html title='Google' /&gt;" SearchSteps="FuzzySelector, Image" />
+              </uix:NClick.Target>
+            </uix:NClick>
+            <uix:NClick ClickType="Single" DisplayName="Click 'Otomobil'" sap:VirtualizedContainerService.HintSize="334,157" sap2010:WorkflowViewState.IdRef="NClick_3" KeyModifiers="None" MouseButton="Left">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="https://www.google.com.tr/search?hl=tr&amp;source=hp&amp;biw=&amp;bih=&amp;q=sahibinden.com&amp;iflsig=AHkkrS4AAAAAYfP43qTA7srFpNRzoEwmGuggpEgEKTKi&amp;gbv=2&amp;oq=sahibinden.com&amp;gs_l=heirloom-hp.13..0i512i433j0i512i433i457j0i402l2j0i512i433l2j0i512l4.46151.46166.0.52675.14.2.0.0.0.0.242.405.0j1j1.2.0....0...1ac.1.34.heirloom-hp..13.1.163.UBm2vxdFJNk" DesignTimeRectangle="180, 242, 56, 16" ElementType="Text" FriendlyName="'Otomobil'" FullSelectorArgument="&lt;webctrl aaname='Otomobil' isleaf='1' parentid='main' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Otomobil' isleaf='1' parentid='main' tag='SPAN' type='' class='XLloXe AP7Wnd' check:text='Otomobil' /&gt;" Guid="4cfbfd94-ffd8-4411-b17d-958c3c218eaa" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAADwAAAAUCAYAAADRA14pAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAFlSURBVFhH7ZK7TcRAFEVpgAboYAugBWJqIN0ayCiChAoI0YqQmBBERkxMCUYHfFZ3n4yxEYvE4CON7Pedd2fmoPtnLIJbZxHcOoOCT0/uuqPD6+3CruC/vXnprd9lbG/8xOHp4fX9n6/sCDZhfXbfez7AtomMbbpvpu79pWBu8uL8sbd2QbQ3TROX+Tavfri6fO6OV5vtwRnHr11fUeayEmzqjdFbJt/wUDCxkXH+PWVrETBkK8xD0E6RmY/YFFFtcllCH3tNFpyJn0FckfmPkHpD+BxSgeIg1gP1HkiNAT4PJP8hhaWOvQnmBlhJ9mO4vKExwUNDQj2QGrdf7jvU60ee9J8UDDStgwt+4uIGwCAZA3z5pKcKhhoDfPmkM57CZgk2oYrGtolgu6l1DlTtuYLZL/OrTW3a1HrgswQLxSS6bJZ4CA5pc5diYa5gsD8rawEfucZzvm8JbplFcOssgtum694A8SUSpV1pdE8AAAAASUVORK5CYII=" InformativeScreenshot="90b4f4c2ebead614e8bfcf2d5fd5dfce.png" ScopeSelectorArgument="&lt;html title='sahibinden.com - Google&amp;apos;da Ara' /&gt;" SearchSteps="FuzzySelector, Image" />
+              </uix:NClick.Target>
+            </uix:NClick>
+            <uix:NClick ClickType="Single" DisplayName="Click 'Anadol'" sap:VirtualizedContainerService.HintSize="334,157" sap2010:WorkflowViewState.IdRef="NClick_4" KeyModifiers="None" MouseButton="Left">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="https://www.sahibinden.com/kategori/otomobil" DesignTimeRectangle="116, 203, 197, 23" FriendlyName="'Anadol'" FullSelectorArgument="&lt;webctrl aaname='Anadol' tag='H2' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Anadol' tag='H2' type='' class='' check:text='Anadol' /&gt;" Guid="df192a15-163c-4bd3-836b-4c1b2252a172" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAMkAAAAbCAYAAADWMKshAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAHqSURBVHhe7ZgtTyRBEED5BfwDfgESeQma4C94BA6FQiLQ6CMhqDUEgzlzYDAEgcGAQhDEJcj7AU3eZGtS+3FUEMtA8l7S2e6q6dkV9aamd6mJyLsoiUiBkogUKIlIgZKIFCiJSIGSiBQoiUjBXElWNkfdWDR7Rzftx/bFeFXDtewR+UxmJPlz+9KW10/b0tqvdnLxOI4uBiWR78CMJFv7l91Y/XnWfS4SJZHvwIwkdJHzq6d2cHzXzZ///htnWhenw9BteB1jPl3kFHF0InJ5P50p79s5vJ7Yz7Ubu7+7PIN53q8kMgQTkhyN7vuzyN3Da1eoxIKQhGIlTwGzJh55iph47I8ca+SJ+xGnW2VJonuxnxEdLVASGYIJSXhy5yJkzQhCkvx0Z/2/ws05OlMueCAXktCdpu/NnBg5UBIZgl6SKMh5gy4AIUmGdRRuPP3jdSvnshBBjs27NxCLbqQkMgS9JPOe9BQ9BU8OKknoOtwjpPqIJHYS+ar0klDc+fwR5HNBJQlFHP+IxbUcziEkiK4Q558sDt/jmUS+Gr0kFHB+igdR7BR5JQnXxL9XyEGceRYjXsUinyXh++lG5BnM829SEhmCiYO7iMyiJCIFSiJSoCQiBUoiUqAkIgVKIlKgJCIFSiLyLq29AcpXTGhcf5VaAAAAAElFTkSuQmCC" InformativeScreenshot="efb215abefa17195201f73eedc844f69.png" ScopeSelectorArgument="&lt;html title='2.El Arabalar ve Satılık Sıfır Km Otomobil Fiyatları sahibinden.com&amp;apos;da' /&gt;" SearchSteps="FuzzySelector, Image" />
+              </uix:NClick.Target>
+            </uix:NClick>
+            <uix:NExtractData AppendResults="False" ContinueOnError="True" DataTable="[ExtractDataTable]" DisplayName="Extract Table Data" ExtractDataSettings="&lt;Table xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:xsd='http://www.w3.org/2001/XMLSchema' Type='Table'&gt;&#xD;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Column-0' ReferenceIdx='0' Name='Column-0'&gt;&#xD;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xD;&#xA;&#x9;&lt;/Column&gt;&#xD;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Seri' ReferenceIdx='1' Name='Seri'&gt;&#xD;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xD;&#xA;&#x9;&lt;/Column&gt;&#xD;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Model' ReferenceIdx='2' Name='Model'&gt;&#xD;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xD;&#xA;&#x9;&lt;/Column&gt;&#xD;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='İlan Başlığı' ReferenceIdx='3' Name='İlan Başlığı'&gt;&#xD;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xD;&#xA;&#x9;&lt;/Column&gt;&#xD;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Yıl' ReferenceIdx='4' Name='Yıl'&gt;&#xD;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xD;&#xA;&#x9;&lt;/Column&gt;&#xD;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='KM' ReferenceIdx='5' Name='KM'&gt;&#xD;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xD;&#xA;&#x9;&lt;/Column&gt;&#xD;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Renk' ReferenceIdx='6' Name='Renk'&gt;&#xD;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xD;&#xA;&#x9;&lt;/Column&gt;&#xD;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Fiyat' ReferenceIdx='7' Name='Fiyat'&gt;&#xD;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xD;&#xA;&#x9;&lt;/Column&gt;&#xD;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='İlan Tarihi' ReferenceIdx='8' Name='İlan Tarihi'&gt;&#xD;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xD;&#xA;&#x9;&lt;/Column&gt;&#xD;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='İl / İlçe' ReferenceIdx='9' Name='İl / İlçe'&gt;&#xD;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xD;&#xA;&#x9;&lt;/Column&gt;&#xD;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Column-10' ReferenceIdx='10' Name='Column-10'&gt;&#xD;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xD;&#xA;&#x9;&lt;/Column&gt;&#xD;&#xA;&#x9;&lt;Column xsi:type='DataNextLink' /&gt;&#xD;&#xA;&lt;/Table&gt;" ExtractMetadata="&lt;extract-table columns_name_source='Longest' get_empty_columns='1' get_columns_name='1'&gt;&lt;column name='Column-0' attr='text' /&gt;&lt;column name='Seri' attr='text' /&gt;&lt;column name='Model' attr='text' /&gt;&lt;column name='İlan Başlığı' attr='text' /&gt;&lt;column name='Yıl' attr='text' /&gt;&lt;column name='KM' attr='text' /&gt;&lt;column name='Renk' attr='text' /&gt;&lt;column name='Fiyat' attr='text' /&gt;&lt;column name='İlan Tarihi' attr='text' /&gt;&lt;column name='İl / İlçe' attr='text' /&gt;&lt;column name='Column-10' attr='text' /&gt;&lt;/extract-table&gt;" sap:VirtualizedContainerService.HintSize="334,157" sap2010:WorkflowViewState.IdRef="NExtractData_1" InteractionMode="HardwareEvents" MaximumResults="0" ScopeIdentifier="2d41d007-ab22-42d8-a3e6-b47a37d6e61a" Version="V1">
+              <uix:NExtractData.NextLink>
+                <uix:TargetAnchorable DesignTimeRectangle="1326, 16, 56, 21" ElementType="Button" FriendlyName="'Kapat'" FullSelectorArgument="&lt;ctrl name='Kapat' role='push button' /&gt;" FuzzySelectorArgument="&lt;ctrl name='Kapat' role='push button' automationid='' check:text='Kapat' /&gt;" Guid="ec6d7c84-2725-4057-b744-90134042dd37" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAADoAAAAZCAYAAABggz2wAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAFBSURBVFhH5daxacRQEIRhteAaXJ5zNyNUgeq4QKED9+DUoMiJzC7/goKZM5Ks44n7YLDwGxYmu25Z+Xp5vVxK9xd6SR1qPYU5Hr2kDrWewhyPXlKHtubn43P5fnuXb5F4i45625PCHI9eUoe2JoYENfbe294U5nj0kjq0J2rQGSMjhTkevaQO7c162FkjI4U5Hr2kDh1JDQxnjIwU5nj0kjp0JE8xtEbG3/W36h5JYY5HL6lDe6KGnTW2MMejl9Shrbk36IyxhTkevaQObc3T/GB4dApzPHpJHWo9hTkevaQOtZ7CHI9eUodaT2GORy+pQ62nMMejl9Sh1lOY49FL6lDrKczx6CV1qPUU5nj0kjrUegpzPHqXxxyP3uUxx6Nn3W63pe/7THz/l3mel2malnEcl2EYMvEd/4u3rZhjdN0vDadicdQFaDEAAAAASUVORK5CYII=" ScopeSelectorArgument="&lt;wnd app='iexplore.exe' cls='IEFrame' title='Anadol Fiyatları &amp;amp; Modelleri sahibinden.com&amp;apos;da - Internet Explor*' /&gt;" SearchSteps="Selector, FuzzySelector, Image" />
+              </uix:NExtractData.NextLink>
+              <uix:NExtractData.Target>
+                <uix:TargetAnchorable DesignTimeRectangle="316, 289, 934, 1030" ElementType="Table" FriendlyName="'TABLE searchResultsTable'" FullSelectorArgument="&lt;webctrl tag='TABLE' /&gt;" Guid="a60f5880-6c0a-40c0-b2df-b002e1b2c3c1" InformativeScreenshot="3318076c236965f60a798ddc7f73ee66.png" ScopeSelectorArgument="&lt;html title='Anadol Fiyatları &amp;amp; Modelleri sahibinden.com&amp;apos;da' /&gt;" SearchSteps="Selector" />
+              </uix:NExtractData.Target>
+            </uix:NExtractData>
+          </Sequence>
+        </ActivityAction>
+      </uix:NApplicationCard.Body>
+      <uix:NApplicationCard.TargetApp>
+        <uix:TargetApp Area="0, 0, 0, 0" BrowserType="IE" IconBase64="iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAARHSURBVFhHvZddbBRVFMf7YrAq+OSbD6Kgb0qUUh60xq9VtA8k1EJrH1CsGIM+GLUmBA0kFi0WSMCHLcVCTMO2GmjFCiUFpH60sUjMEtIGLaAWama32w92dt2vOf7PndPd3M7sdmobf8k/M/fec8//zJ07s7NFXrEsawlUnclkmqEBaAxKisLS14yYKo6VafMHyR5A4hYoTh5BbAw6iLnLJc3cQZ7bkKQRSttp5w7mpqBdKKRY0noDE+7HxEuSZ94gVxA5l0n6wiDwYUwIyVyN9I0RMls/p4l33qDwi8+R4VtNxjOlFF7no/G3XyfzcBOlR/6UaB3kNHBYITbuyJU7zNOj12ly+/tkPL2KjKdKCgsxkx++p+bMhIvIuxIYuB0BjmWPn+qi0Atl7mYFFCp/nP45e0qy5IAH3w7nnsBAo8RkMY8cck3uVVMN2yWTDrwaxNYGFfGjpu12vnK3pKxIbRVFD+yj+DdHKd51DOf7KfJatRYztbueyLIkmw68UtqtQEeLjCl4s4Wef0xLyBqrWUuJ8/0S5SQx0EfhDeV0c/+n0pMfeDYrc5zfiYb2konufdNhPr7lZbKmpiQiP5YZlbPCwNPEKizm5a+WPoUVG6ZU9yKarLsna86PXGYiIhELB7zX8/I3S1uRuVpPqZ5blMx9d1FozUqKnzwuowsLvP1cwIC0FelffNkCWImjS4lSKRldWODdzwWMSVuR6r1bKyB9sUpG3Hnyo6hnnb2kXwi8DS4gKW1F6vQirYDM79tkxB03o3xq/VGz4gIS/2sBLecSMstmuoCwtBWOWxDcICPuuBnlU3u/YwXULdA34YVntQJGeh+kZGbum/CKkXEUcG7QsQfUJpzxGH6cNT/etZQeDayljuEeGfVOoC/pKGB0Qn81w9vPLyJtm1uxqxTrKab6jkdoZWCdkq/jFQrHxyVidm7GLarYa2rmG/0xGc0B70ouYAkq0Ub39O3Imk+rpvtdmkjM/ipO4iet7khcM2e1Oe+/icMd6vcAjYN2t82NqEFlX73kKKL8683Ue/28RDm5PH6NNnUGYDipmfNqxBKO5W9S5gxWYTk6tB1y4lqvo4BpVXz7FjVeaKH2yyfoy99O0mfBVnq1ZyuVBCrUeOmhOnrik7+yBXw/pH/XwisJz/vE3gadu2Q8yxdDnQ5zrypp3Uhlu392PPsMvHaKbQ7082f4RTskR/cfP+B21LiaFFJpWyUdCHZKlhzw+BWHW8VWB8uyDAH89aoxaoZo6097aFWbvcSzafOZD2gwMiyzcyD33zjcK3buIGCFWxEMb87Dg8doy3c7aE1nLa1ur1RX6uvYRLWnt6m9MBS5ItE6bI4LfEhsCiMrEZS58wa5eNkLX/lMUEQxJjZA//ljAHP5j+tOnLrfcy/IavA/Yn5xeIJjoSbM1R+1+YBki6H1SOyH+iEDSoj4nPv8iKlEDfYbblaKiv4FoeF/NqqvoEMAAAAASUVORK5CYII=" InformativeScreenshot="f63495f61f16961c7639c3a04e6d1103.png" Selector="&lt;html title='Google'/&gt;" Url="https://www.google.com.tr/" />
+      </uix:NApplicationCard.TargetApp>
+    </uix:NApplicationCard>
+    <Sequence sap:VirtualizedContainerService.HintSize="476,380" sap2010:WorkflowViewState.IdRef="Sequence_8">
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+      <ui:ExcelApplicationScope Password="{x:Null}" DisplayName="Excel Application Scope" sap:VirtualizedContainerService.HintSize="434,288" sap2010:WorkflowViewState.IdRef="ExcelApplicationScope_2" InstanceCachePeriod="3000" WorkbookPath="dosya.xlsx">
+        <ui:ExcelApplicationScope.Body>
+          <ActivityAction x:TypeArguments="ui:WorkbookApplication">
+            <ActivityAction.Argument>
+              <DelegateInArgument x:TypeArguments="ui:WorkbookApplication" Name="ExcelWorkbookScope" />
+            </ActivityAction.Argument>
+            <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="376,179" sap2010:WorkflowViewState.IdRef="Sequence_7">
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+              <ui:ExcelWriteRange AddHeaders="False" DataTable="[ExtractDataTable]" DisplayName="Write Range" sap:VirtualizedContainerService.HintSize="334,87" sap2010:WorkflowViewState.IdRef="ExcelWriteRange_1" SheetName="Sayfa1" StartingCell="A1" />
+            </Sequence>
+          </ActivityAction>
+        </ui:ExcelApplicationScope.Body>
+      </ui:ExcelApplicationScope>
+    </Sequence>
+  </Sequence>
+</Activity>
